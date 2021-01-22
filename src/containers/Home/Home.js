@@ -69,7 +69,7 @@ class Home extends Component {
         </div>
 
         <div className="home-container">
-          {filteredItems.length
+          {items.length
             ? (filteredItems.map((item, index) => (
               <CardItem
                 key={index}
