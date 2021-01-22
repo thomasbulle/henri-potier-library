@@ -11,6 +11,7 @@ Le site comprend 3 pages :
   1. la page d'accueil
   1. la page produit
   1. le panier
+
 Le site dispose d'une version française et une version anglaise. La langue est sélectionnée en fonction de la langue du naviguateur de l'utilisateur. Il est possible de la changer en cliquant sur les icônes des drapeaux dans l'en-tête du site.
 
 ### Page d'accueil
