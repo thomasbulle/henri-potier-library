@@ -24,7 +24,7 @@ La page produit permet de visualiser le détails complet d'un livre.
 
 Elle est accessible en cliquant sur le lien "Voir plus" ou en cliquant sur le titre du livre.
 
-Chaque livre possède un note sur 5 points. Ces points sont attribués aléatoirement pour chacun des livres. Ils disposent également d'un nombre de commentaire attribués aléatoirement aussi.
+Chaque livre possède un note sur 5 points. Ces points sont attribués aléatoirement pour chacun des livres. Ils disposent également d'un nombre de commentaires attribués aléatoirement aussi.
 
 ### Panier
 Cette page permet de visualiser le contenu du panier.
