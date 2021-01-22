@@ -1,0 +1,139 @@
+@import "../../config/config.scss";
+
+.Header-wrapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+  padding: 15px;
+  background-color: $backgroundHeader;
+  box-shadow: 0px 0px 10px 0px $shadowHeader;
+
+  .locale-container {
+    height: 100%;
+    
+    .locale {
+      margin-left: 10px;
+      
+      &:hover {
+        cursor: pointer;
+      }
+
+      .locale-flag {
+        max-width: 100%;
+        width: 25px;
+        height: auto;
+      }
+    }
+  }
+
+  .logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    .logo-img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .cart-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .cart-button {
+      position: relative;
+
+      &::after {
+        content: "";
+        opacity: 0;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 12px;
+        width: 7px;
+        height: 7px;
+        border-radius: 5px;
+        background-color: $black;
+      }
+
+      &.animate {
+        animation: shoppingCartAnimation .5s forwards;
+
+        &::after {
+          opacity: 1;
+          animation: itemCartAnimation .5s forwards;
+        }
+      }
+    }
+  }
+}
+
+@keyframes shoppingCartAnimation {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(-40deg) scale(1.1);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes itemCartAnimation {
+  0% {
+    left: 12px;
+    top: 0;
+  }
+
+  50% {
+    left: 25px;
+    top: 5px;
+  }
+
+  100% {
+    left: 30px;
+    top: 15px;
+  }
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: $XS) {
+  .Header-wrapper {
+    min-height: 80px;
+    padding: 5px;
+
+    .locale-container {      
+      .locale {
+        .locale-flag {
+          width: 20px;
+        }
+      }
+    }
+
+    .cart-container {
+      .cart-button {
+        &::after {
+          width: 5px;
+          height: 5px;
+        }
+
+        .card-icon {
+          width: 25px;
+        }
+      }
+    }
+  }
+}

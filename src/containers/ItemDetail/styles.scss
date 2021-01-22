@@ -1,0 +1,12 @@
+@import "../../config/config.scss";
+
+.ItemDetail-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: $XS) {
+
+}

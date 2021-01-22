@@ -1,0 +1,45 @@
+@import "../../config/config.scss";
+
+.CartPopover-wrapper {
+  .cart-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .item-detail-container {
+      display: flex;
+      width: 100%;
+      margin-bottom: 20px;
+
+      .cover-item-detail {
+        width: 10%;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .item-detail {
+        width: 90%;
+        margin-left: 10px;
+
+        .item-title {
+          display: block;
+          width: 100%;
+        }
+
+        .price-quantity-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .footer-popover {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid $greySeparator;
+  }
+}

@@ -1,0 +1,73 @@
+@import "../../config/config.scss";
+
+.Home-wrapper {
+  .home-intro {
+    margin: 30px 0 50px;
+    font-size: 1.4em;
+  }
+  
+  .title-container {
+    position: relative;
+
+    .header-title {
+      margin-bottom: 0;
+      font-size: 2.2em;
+    }
+  
+    .ant-input-search {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  .home-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -20px;
+  }
+}
+
+/* --- RESPONSIVE --- */
+@media (min-width: $XS) and (max-width: $M) {
+  .Home-wrapper {
+    .title-container {
+      .ant-input-search {
+        position: initial;
+        top: 0;
+        transform: none;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: $XS) {
+  .Home-wrapper {
+    .home-intro {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 1.1em;
+    }
+
+    .title-container {
+      .header-title{
+        font-size: 2em;
+      }
+
+      .ant-input-search {
+        position: initial;
+        top: 0;
+        margin-top: 20px;
+        transform: initial;
+      }
+    }
+
+    .home-container {
+      flex-direction: column;
+      margin-left: 0;
+    }
+  }
+}

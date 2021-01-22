@@ -1,0 +1,27 @@
+@import "../../config/config.scss";
+
+.ManageItemQuantity-wrapper {
+  display: inline-block;
+  
+  .ant-input-group {
+    max-width: 100px;
+
+    .input-quantity {
+      background-color: $white;
+      color: $text;
+  
+      &:hover {
+        cursor: default;
+      }
+    }
+  }
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: $XS) {
+  .ManageItemQuantity-wrapper {
+    .ant-input-group {
+      max-width: 70px;
+    }
+  }
+}

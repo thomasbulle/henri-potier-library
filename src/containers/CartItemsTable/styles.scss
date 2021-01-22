@@ -1,0 +1,77 @@
+@import "../../config/config.scss";
+
+.cartItemsTable-wrapper {
+  .img-name-table {
+    width: 30px;
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px
+  }
+
+  .delete-item-button {
+    padding: 5px 10px;
+  }
+
+  .mobile-description-wrapper {
+    display: flex;
+
+    .mobile-cover-container {
+      width: 25%;
+
+      &>a {
+        width: 100%;
+
+        .img-name-table {
+          width: 100%;
+        }
+      }
+    }
+
+    .mobile-description-container {
+      width: 75%;
+      padding-left: 10px;
+
+      .mobile-description-title {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+
+      .mobile-description-price {
+        display: block;
+        width: 100%;
+        text-align: right;
+      }
+
+      .quantity-actions-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .delete-item-button {
+          padding: 0 7px;
+        }
+      }
+    }
+  }
+  
+  .footer-table {
+    text-align: right;
+  
+    .subtotal-container {
+      margin-top: 10px;
+    }
+  
+    .offer-container {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  
+    .total-container {
+      margin-top: 20px;
+      padding-top: 10px;
+      border-top: 1px solid $greySeparator;
+      font-size: 1.3em;
+    }
+  }
+}
